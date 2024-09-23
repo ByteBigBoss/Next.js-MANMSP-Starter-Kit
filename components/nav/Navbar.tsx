@@ -8,6 +8,7 @@ import { Button } from '@nextui-org/react'
 import ThemeSwitch from '../theme/theme-switch'
 import { Burger, Drawer } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks';
+import { Site } from '@/config/site'
 
 const Navbar = () => {
 
@@ -78,7 +79,7 @@ const Navbar = () => {
                 <Drawer.Overlay />
                 <Drawer.Content>
                     <Drawer.Header>
-                        <Drawer.Title className='font-bold uppercase'>MANMSP</Drawer.Title>
+                        <Drawer.Title className='font-bold uppercase'>{Site.siteName}</Drawer.Title>
                         <Drawer.CloseButton />
                     </Drawer.Header>
                     <Drawer.Body>
@@ -128,7 +129,7 @@ const Navbar = () => {
 
                     {/* LEFT */}
                     <div className='z-[50]'>
-                        <Link href={'/'} className='font-bold uppercase'>MANMSP</Link>
+                        <Link href={'/'} className='font-bold uppercase'>{Site.siteName}</Link>
                     </div>
 
                     {/* CENTER */}

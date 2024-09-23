@@ -1,3 +1,13 @@
+export const Site = {
+    siteName: "MANMSP",
+    gitHubUser: "@ByteBigBoss",
+    repoUrl: "https://github.com/ByteBigBoss/Next.js-MANMSP-Starter-Kit",
+    author:"Nethmina",
+    authorPortfolio:"#",
+    org:"ImaginecoreX",
+    orgUrl:"https://company.imcrox.com"
+}
+
 export const SiteMetadata = {
     title: "Next.js MANMSP Starter Kit",
     description: "your-site-description",
