@@ -10,6 +10,14 @@ Welcome to the **Next.js StarterKit**, a full-fledged boilerplate integrating mu
 - [Shadcn UI](https://ui.shadcn.com/) <!-- Replace with the correct link -->
 - [PrimeReact](https://primereact.org/)
 
+## Deploy Your Own
+
+Deploy this StarterKit using Vercel by clicking the button below:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FByteBigBoss%2FNext.js-MANMSP-Starter-Kit)
+
+Clicking this button will prompt you to deploy the project directly to your own Vercel account. Vercel will handle the entire deployment process, and you will have your application live in no time.
+
 ## Features
 
 - **Multi-UI Integration**: Choose from a variety of UI libraries and easily switch between them.
