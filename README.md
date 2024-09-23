@@ -64,12 +64,12 @@ Mantine is a full-featured React component library offering a wide range of comp
 
 Aceternity UI offers a unique set of sleek and modern components to craft beautiful interfaces. You'll find:
 
-- Components in `components/aceternity`.
+- Components in `components/ui`.
 - Additional customization options are provided through the Aceternity theme.
 
 ### NextUI
 
-NextUI delivers performance-optimized components for Next.js. Components are located in `components/nextui`. 
+NextUI delivers performance-optimized components for Next.js. Components are located in `@nextui-org/react`. 
 
 Visit the official [NextUI documentation](https://nextui.org/) to learn more about its usage.
 
@@ -79,11 +79,11 @@ MagicUI enhances your web application with mystical components and powerful util
 
 ### Shadcn UI
 
-Shadcn is a modern and customizable UI library with a focus on accessibility. You can find Shadcn components in `components/shadcn`.
+Shadcn is a modern and customizable UI library with a focus on accessibility. You can find Shadcn components in `components/ui`.
 
 ### PrimeReact
 
-PrimeReact brings a large collection of rich UI components, covering various needs like tables, form elements, and more. You'll find these components in `components/primereact`.
+PrimeReact brings a large collection of rich UI components, covering various needs like tables, form elements, and more. You'll find these components in `primereact`.
 
 Check out [PrimeReact documentation](https://primereact.org/) for full component details.
 
@@ -93,21 +93,21 @@ Check out [PrimeReact documentation](https://primereact.org/) for full component
 
 This StarterKit allows you to easily switch between different UI libraries. Here's how you can switch components:
 
-1. Navigate to the `pages/index.tsx` file.
+1. Navigate to the `app/page.tsx` file.
 2. Uncomment or replace the import statements based on the UI library you want to use.
 3. Update the component in the JSX with the corresponding library component.
 
 ```tsx
-import { Button } from '@/components/mantine'; // Example for Mantine
-// import { Button } from '@/components/nextui';  // Example for NextUI
+import { Button } from '@mantine/core' // Example for Mantine
+// import { Button } from '@nextui-org/react'  // Example for NextUI
 ```
 
 ### Customizing Components
 
-You can customize any component by navigating to the respective library folder inside the `components/` directory. For example, to customize a `Button` component for MagicUI:
+You can customize any component by navigating to the respective library folder inside the `components/` directory. For example, to customize a `Button` component for Shadcn UI:
 
 ```bash
-components/magicui/Button.tsx
+components/ui/button.tsx
 ```
 
 ## Directory Structure
@@ -115,16 +115,11 @@ components/magicui/Button.tsx
 ```bash
 .
 ├── components/
-│   ├── aceternity/      # Aceternity UI components
-│   ├── mantine/         # Mantine components
 │   ├── magicui/         # MagicUI components
-│   ├── nextui/          # NextUI components
-│   ├── primereact/      # PrimeReact components
-│   └── shadcn/          # Shadcn UI components
-├── pages/               # Next.js pages and routing
+│   ├── ui/              # Shadcn UI + Aceternity UI components
+├── app/               # Next.js pages and routing
 ├── public/              # Static files
 ├── styles/              # Global and component-specific styles
-├── .env                 # Environment variables
 └── package.json         # Project dependencies and scripts
 ```
 
