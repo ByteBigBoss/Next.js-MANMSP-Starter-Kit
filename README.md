@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js StarterKit with Mantine, Aceternity, NextUI, MagicUI, Shadcn, and PrimeReact
+
+Welcome to the **Next.js StarterKit**, a full-fledged boilerplate integrating multiple UI libraries. This starter kit offers a flexible and efficient development environment for building stunning web applications using:
+
+- [Next.js](https://nextjs.org/)
+- [Mantine](https://mantine.dev/)
+- [Aceternity UI](https://ui.aceternity.com/) <!-- Replace with the correct link -->
+- [NextUI](https://nextui.org/)
+- [MagicUI](https://magicui.design/) <!-- Replace with the correct link -->
+- [Shadcn UI](https://ui.shadcn.com/) <!-- Replace with the correct link -->
+- [PrimeReact](https://primereact.org/)
+
+## Deploy Your Own
+
+Deploy this StarterKit using Vercel by clicking the button below:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FByteBigBoss%2FNext.js-MANMSP-Starter-Kit)
+
+Clicking this button will prompt you to deploy the project directly to your own Vercel account. Vercel will handle the entire deployment process, and you will have your application live in no time.
+
+## Features
+
+- **Multi-UI Integration**: Choose from a variety of UI libraries and easily switch between them.
+- **Built with TypeScript**: Enjoy type safety and autocompletion for an enhanced developer experience.
+- **Pre-configured Routing**: Using the power of Next.js for server-side rendering (SSR), static generation (SSG), and API routes.
+- **Component Flexibility**: Extensible and customizable components for building unique interfaces.
+- **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
+- **CSS-in-JS**: Supports various styling options, including CSS Modules and Styled Components.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v16+)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git@github.com:ByteBigBoss/Next.js-MANMSP-Starter-Kit.git nextjs-starterkit
+   cd nextjs-starterkit
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   pnpm dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the application in action.
+
+## Available UI Libraries
+
+### Mantine
+
+Mantine is a full-featured React component library offering a wide range of components and hooks for your Next.js applications. To use Mantine:
+
+- Components are located in the `@mantine/core` directory.
+- Visit [Mantine documentation](https://mantine.dev/) for more information.
+
+### Aceternity UI
+
+Aceternity UI offers a unique set of sleek and modern components to craft beautiful interfaces. You'll find:
+
+- Components in `components/ui`.
+- Additional customization options are provided through the Aceternity theme.
+
+### NextUI
+
+NextUI delivers performance-optimized components for Next.js. Components are located in `@nextui-org/react`. 
+
+Visit the official [NextUI documentation](https://nextui.org/) to learn more about its usage.
+
+### MagicUI
+
+MagicUI enhances your web application with mystical components and powerful utilities. All MagicUI components can be found in the `components/magicui` folder.
+
+### Shadcn UI
+
+Shadcn is a modern and customizable UI library with a focus on accessibility. You can find Shadcn components in `components/ui`.
+
+### PrimeReact
+
+PrimeReact brings a large collection of rich UI components, covering various needs like tables, form elements, and more. You'll find these components in `primereact`.
+
+Check out [PrimeReact documentation](https://primereact.org/) for full component details.
+
+## Usage
+
+### Switching UI Libraries
+
+This StarterKit allows you to easily switch between different UI libraries. Here's how you can switch components:
+
+1. Navigate to the `app/page.tsx` file.
+2. Uncomment or replace the import statements based on the UI library you want to use.
+3. Update the component in the JSX with the corresponding library component.
+
+```tsx
+import { Button } from '@mantine/core' // Example for Mantine
+// import { Button } from '@nextui-org/react'  // Example for NextUI
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Customizing Components
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can customize any component by navigating to the respective library folder inside the `components/` directory. For example, to customize a `Button` component for Shadcn UI:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+components/ui/button.tsx
+```
 
-## Learn More
+## Directory Structure
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+.
+├── components/
+│   ├── magicui/         # MagicUI components
+│   ├── ui/              # Shadcn UI + Aceternity UI components
+├── app/                 # Next.js pages and routing
+├── public/              # Static files
+├── styles/              # Global and component-specific styles
+└── package.json         # Project dependencies and scripts
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Feel free to submit a pull request if you'd like to contribute or suggest improvements. We welcome contributions of all kinds!
 
-## Deploy on Vercel
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/new-feature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/new-feature`).
+5. Open a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+Happy Coding 🚀
+
+![Alt](https://repobeats.axiom.co/api/embed/2f95ef5baade233453a3f06f140af957429b0a35.svg "Repobeats analytics image")
