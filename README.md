@@ -140,4 +140,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Happy Coding 🚀
+
 ![Alt](https://repobeats.axiom.co/api/embed/2f95ef5baade233453a3f06f140af957429b0a35.svg "Repobeats analytics image")
