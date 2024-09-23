@@ -117,7 +117,7 @@ components/ui/button.tsx
 ├── components/
 │   ├── magicui/         # MagicUI components
 │   ├── ui/              # Shadcn UI + Aceternity UI components
-├── app/               # Next.js pages and routing
+├── app/                 # Next.js pages and routing
 ├── public/              # Static files
 ├── styles/              # Global and component-specific styles
 └── package.json         # Project dependencies and scripts
