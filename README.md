@@ -57,7 +57,7 @@ Make sure you have the following installed:
 
 Mantine is a full-featured React component library offering a wide range of components and hooks for your Next.js applications. To use Mantine:
 
-- Components are located in the `components/mantine` directory.
+- Components are located in the `@mantine/core` directory.
 - Visit [Mantine documentation](https://mantine.dev/) for more information.
 
 ### Aceternity UI
