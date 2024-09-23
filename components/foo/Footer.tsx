@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='z-[100] flex w-full flex-col items-center border-t border-[#0000001f] dark:border-[#ffffff1f] py-[20px] bg-[#f7f7f73f] dark:bg-[#00000025] backdrop-blur-sm'>
             <WrapperBody>
              <div className='flex items-center justify-between pt-8 mobile:flex-col mobile:gap-6'>
-                    <Link href={"https://github.com/ByteBigBoss"} className='flex items-center gap-2 text-[12px] font-medium opacity-65'><GitHubLogoIcon width={20} height={20} /> @ByteBigBoss</Link>
+                    <Link href={"https://github.com/ByteBigBoss/Next.js-MANMSP-Starter-Kit"} className='flex items-center gap-2 text-[12px] font-medium opacity-65'><GitHubLogoIcon width={20} height={20} /> @ByteBigBoss</Link>
 
                     <div className='text-[12px]   flex items-center gap-4'>
                         <div>
