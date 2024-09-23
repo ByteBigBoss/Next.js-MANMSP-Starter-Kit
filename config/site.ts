@@ -1,7 +1,7 @@
 export const Site = {
     siteName: "MANMSP",
     gitHubUser: "@ByteBigBoss",
-    repoUrl: "https://github.com/ByteBigBoss/Next.js-MANMSP-Starter-Kit",
+    gitHubUrl: "https://github.com/ByteBigBoss/Next.js-MANMSP-Starter-Kit",
     author:"Nethmina",
     authorPortfolio:"#",
     org:"ImaginecoreX",
