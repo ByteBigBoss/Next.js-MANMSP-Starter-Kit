@@ -1,4 +1,4 @@
-# Next.js StarterKit with Mantine, Aceternity, NextUI, MagicUI, Shadcn, and PrimeReact
+# Next.js StarterKit with Mantine, Aceternity, NextUI, MagicUI, Shadcn, PrimeReact, and Shoelace
 
 Welcome to the **Next.js StarterKit**, a full-fledged boilerplate integrating multiple UI libraries. This starter kit offers a flexible and efficient development environment for building stunning web applications using:
 
@@ -9,6 +9,8 @@ Welcome to the **Next.js StarterKit**, a full-fledged boilerplate integrating mu
 - [MagicUI](https://magicui.design/) <!-- Replace with the correct link -->
 - [Shadcn UI](https://ui.shadcn.com/) <!-- Replace with the correct link -->
 - [PrimeReact](https://primereact.org/)
+- [Shoelace](https://shoelace.style/) <!-- Link to Shoelace documentation -->
+- [Aelomotion](https://aelomotion.imcrox.com/)
 
 ## Deploy Your Own
 
@@ -95,6 +97,13 @@ PrimeReact brings a large collection of rich UI components, covering various nee
 
 Check out [PrimeReact documentation](https://primereact.org/) for full component details.
 
+### Shoelace
+
+Shoelace provides a library of professionally designed, customizable UI components. To get started with Shoelace:
+
+- Components are imported from the `@shoelace-style/shoelace` package.
+- Refer to the [Shoelace documentation](https://shoelace.style) for detailed instructions on usage.
+
 ## Usage
 
 ### Switching UI Libraries
@@ -123,6 +132,9 @@ components/ui/button.tsx
 ```bash
 .
 ├── components/
+│   ├── anim/   
+│        ├── aelomotion/ # Aelomotion Animations
+│        ├── shoelace/   # Shoelace Animations
 │   ├── magicui/         # MagicUI components
 │   ├── ui/              # Shadcn UI + Aceternity UI components
 ├── app/                 # Next.js pages and routing
