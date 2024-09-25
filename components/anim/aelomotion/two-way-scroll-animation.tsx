@@ -11,7 +11,7 @@ const TwoWayScrollAnimation = ({ children, animate, initial, reverse, threshold 
 
     useEffect(() => {
         const handleScroll = () => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
             if (scrollTop > lastScrollTop) {
                 setScrollDirection('down');
             } else {
@@ -41,13 +41,15 @@ const TwoWayScrollAnimation = ({ children, animate, initial, reverse, threshold 
             { threshold }
         );
 
-        if (ref.current) {
-            observer.observe(ref.current);
+        const currentRef = ref.current; // Store ref.current in a variable
+
+        if (currentRef) {
+            observer.observe(currentRef);
         }
 
         return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
+            if (currentRef) {
+                observer.unobserve(currentRef); // Use the variable in cleanup
             }
         };
     }, [controls, animate, reverse, threshold, scrollDirection]);

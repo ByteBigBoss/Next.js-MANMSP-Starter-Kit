@@ -21,7 +21,7 @@ const PositionAnimation = ({ children, animate, initial }: PositionProps) => {
 
     useEffect(() => {
         controls.start({ opacity: animate.opacity, y: animate.y });
-    }, []);
+    });
 
     return (
         <motion.div animate={controls} initial={{ opacity: initial.opacity, y: initial.y }}>
