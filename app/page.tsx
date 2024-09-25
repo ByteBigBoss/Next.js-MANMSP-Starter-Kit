@@ -4,7 +4,7 @@ import BlurIn from "@/components/magicui/blur-in";
 import WrapperBody from '@/components/wrappers/WrapperBody';
 import { BackgroundLines } from "@/components/ui/background-lines";
 import {motion} from "framer-motion"
-import { RubberBandElement } from "@/components/anim/shoelace/rubberBand";
+import { RubberBandElement } from "@/components/anim/shoelace/rubber-band";
 
 
 export default function Home() {
