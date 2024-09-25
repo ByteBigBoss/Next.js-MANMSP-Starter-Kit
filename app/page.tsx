@@ -4,6 +4,8 @@ import BlurIn from "@/components/magicui/blur-in";
 import WrapperBody from '@/components/wrappers/WrapperBody';
 import { BackgroundLines } from "@/components/ui/background-lines";
 import {motion} from "framer-motion"
+import { RubberBandElement } from "@/components/anim/shoelace/rubberBand";
+
 
 export default function Home() {
   return (
@@ -12,10 +14,12 @@ export default function Home() {
         {/* Aceternity */}
         <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
           <div className="flex flex-col items-center">
+            <RubberBandElement>
             <BlurIn
               word="Next.js MANMSP Starter Kit"
-              className="text-4xl font-bold text-black dark:text-white"
+              className="text-4xl font-bold text-black dark:text-white hover:cursor-pointer"
             />
+            </RubberBandElement>
             <motion.div
             initial={{y:20, opacity:0}}
             animate={{y:0, opacity:0.6}}

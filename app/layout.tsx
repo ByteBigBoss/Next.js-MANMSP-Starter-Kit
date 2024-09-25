@@ -9,6 +9,12 @@ import { SiteMetadata } from "@/config/site";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/foo/Footer";
 import { theme } from "@/config/mantine-theme";
+import Head from "next/head";
+
+import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path';
+import '@shoelace-style/shoelace/dist/themes/light.css';
+
+setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/');
 
 export const metadata: Metadata = {
   ...SiteMetadata
@@ -19,16 +25,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
-      <head>
+      <Head>
         <ColorSchemeScript defaultColorScheme="auto"/>
-      </head>
+      </Head>
       <body className={`${poppins.className} antialiased bg-white dark:bg-black text-black dark:text-white relative`}>
+       
         <ThemeProvider
         enableSystem
           attribute='class'
-          defaultTheme='dark'
+          defaultTheme='system'
           
         >
           <MantineProvider defaultColorScheme="auto" theme={theme}>
