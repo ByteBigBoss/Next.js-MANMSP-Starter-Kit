@@ -47,9 +47,15 @@ interface ScrollProps {
     animate: ControlProps;
     reverse: ControlProps;
     threshold?: number;
+    className?:string
 }
 
 interface ControlProps {
-    opacity: number;
-    y: number;
+  opacity?: number;
+  y?: number;
+  x?:number;
+  width?: string;
+  height?: string;
+  color?: string;
+  background?: string;
 }

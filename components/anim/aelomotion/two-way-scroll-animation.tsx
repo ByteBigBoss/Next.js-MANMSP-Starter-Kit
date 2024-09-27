@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
 
-const TwoWayScrollAnimation = ({ children, animate, initial, reverse, threshold = 0.5 }: ScrollProps) => {
+const TwoWayScrollAnimation = ({ children, animate, initial, reverse, threshold = 0.5, className }: ScrollProps) => {
     const controls = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
     const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('down');
@@ -32,9 +32,25 @@ const TwoWayScrollAnimation = ({ children, animate, initial, reverse, threshold 
             ([entry]) => {
                 if (entry.isIntersecting) {
                     if (scrollDirection === 'down') {
-                        controls.start({ opacity: animate.opacity, y: animate.y });
+                        controls.start({ 
+                            opacity: animate.opacity?animate.opacity:undefined,
+                            y: animate.y?animate.y:undefined, 
+                            x: animate.x?animate.x: undefined,
+                            color: animate.color?animate.color:undefined, 
+                            width: animate.width?animate.width:undefined, 
+                            height: animate.height?animate.height:undefined, 
+                            background:animate.background?animate.background:undefined
+                        });
                     } else {
-                        controls.start({ opacity: reverse.opacity, y: reverse.y });
+                        controls.start({ 
+                            opacity: reverse.opacity?reverse.opacity:undefined, 
+                            y: reverse.y?reverse.y:undefined,
+                            x: reverse.x?reverse.x: undefined,
+                            color: reverse.color?reverse.color:undefined, 
+                            width: reverse.width?reverse.width:undefined, 
+                            height: reverse.height?reverse.height:undefined, 
+                            background:reverse.background?reverse.background:undefined 
+                        });
                     }
                 }
             },
@@ -58,7 +74,16 @@ const TwoWayScrollAnimation = ({ children, animate, initial, reverse, threshold 
         <motion.div
             ref={ref}
             animate={controls}
-            initial={{ opacity: initial.opacity, y: initial.y }}
+            initial={{ 
+                opacity: initial?.opacity, 
+                y: initial?.y, 
+                x: initial?.x,
+                color: initial?.color, 
+                background: initial?.background, 
+                width: initial?.width, 
+                height: initial?.height
+            }}
+            className={className}
         >
             {children}
         </motion.div>

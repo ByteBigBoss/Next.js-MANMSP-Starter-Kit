@@ -29,5 +29,16 @@ export const PageMetadata = {
         title: "About",
         description: "About Your Website"
     },
-
+    works: {
+        title: "Works",
+        description: "Your Works"
+    },
+    blog: {
+        title: "Blog",
+        description: "Your Blogs"
+    },
+    contact: {
+        title: "Contact",
+        description: "Your Contact Details"
+    },
 };

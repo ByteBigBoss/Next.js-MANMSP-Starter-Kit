@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react"
 
-const About = () => {
+const Contact = () => {
   return (
     <div className='w-full min-h-screen flex flex-col items-center justify-center font-medium'>
-      <div>Your About Page</div>
+        <div>Your Contact Page</div>
     </div>
   )
 }
 
-export default About
+export default Contact
